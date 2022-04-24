@@ -17,7 +17,7 @@ setup(
     long_description=long_desc,
     long_description_content_type='text/markdown',
     author='Antonio Dumit',
-    url='https://stash.nov.com:8443/projects/CDM/repos/cetdm_python/browse/tetl-cli',
+    url='https://github.com/dumit98/projects/tree/master/vl-cli',
     packages=find_packages(),
     install_requires=req,
     entry_points={

@@ -316,7 +316,6 @@ def dataset_convert_to_pdf(items=[]):
 
 def parse_arguments():
     parser = argparse.ArgumentParser(
-        prog='cdm_convert_dataset_to_pdf',
         formatter_class=argparse.RawDescriptionHelpFormatter, 
         description='A python script for the PDF Dataset convertion service',
         epilog=textwrap.dedent('''

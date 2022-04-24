@@ -1,11 +1,11 @@
-# cdm_convert_dataset_to_pdf.py
+# dataset2pdf.py
 
 A script for the dataset-to-PDF conversion service.
 <br/><br/>
 
 ###### Usage
-```sh
-usage: cdm_convert_dataset_to_pdf [-h] -u USERNAME -p PASSWORD -log_dir
+```
+usage: dataset2pdf [-h] -u USERNAME -p PASSWORD -log_dir
                                   LOG_DIR -input_file TXT_FILE [-debug]
 
 A python script for the PDF Dataset convertion service

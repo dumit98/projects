@@ -8,10 +8,10 @@ with open('requirements.txt') as f:
     req = f.read().splitlines()
 
 setup(
-    name='cetdm',
+    name='my_modules',
     version='1.0.0',
-    description='tools and modules for cetdm',
-    url='https://stash.nov.com:8443/projects/CDM/repos/cetdm_python/browse/cetdm',
+    description='some tools and modules',
+    url='https://github.com/dumit98/projects/tree/master/modules',
     packages=find_packages(),
     install_requires=req
 )

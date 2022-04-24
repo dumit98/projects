@@ -5,7 +5,7 @@ A CLI client for the Bulkloader.
 
 ###### Usage
 
-``` sh
+```
 usage: bulkload.py [-h] [-n [{Nov4Part | Documents}]] -u USER -p PASSWORD
                    [-g GROUP] -f FILE -l LOG_DIR [-S SERVER] [-Po PORT_OUT]
                    [-Pi PORT_IN] [-y] [-v] [-e EMAIL] [--release] [--delete]
@@ -38,6 +38,6 @@ optional arguments:
 ```
 <br/><br/>
 
-**Example:** run a load to TC Training.
+**Example:** run a data load from a spreadsheet to a test environment.
 
-[![bl_load](https://stash.nov.com:8443/projects/CDM/repos/cetdm_python/raw/art/bulkload.gif)](https://drive.google.com/file/d/1tvq8cenDLiWtTAHCnahxx4vabFM3jaDn/view?usp=sharing)
+[![bulkload](https://github.com/dumit98/projects/blob/master/art/bulkload.gif?raw=true)](https://drive.google.com/file/d/1tvq8cenDLiWtTAHCnahxx4vabFM3jaDn/view?usp=sharing)

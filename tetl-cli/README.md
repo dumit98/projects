@@ -1,11 +1,11 @@
 # tetl
 
-CLI wrapper for the [`etl.tiny_etl`](https://stash.nov.com:8443/projects/CDM/repos/cetdm_python/browse/etl) module. Extract data from a site(s) and load to a db or excel file with one command.
+CLI wrapper for the [`etl.tiny_etl`](https://github.com/dumit98/projects/tree/master/tetl-cli) module. Extract data from a site(s) and load to a db or excel file with one command.
 <br/><br/>
 
 ###### Usage
 
-``` sh
+```
 usage: tetl [-h]
             [-s {all|edm|fra|houstby|nor|sha|dw} [{all|edm|fra|houstby|nor|sha|dw} ...]]
             [-t {excel|dw|ds}] [-n TARGET_NAME] [-if {drop|append|delete}]
@@ -36,6 +36,6 @@ optional arguments:
 ### Installation
 `tetl` can be installed via `setup.py`
 
-``` sh
+```
 pip install .
 ```

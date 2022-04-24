@@ -5,7 +5,7 @@ Split a file and parallely execute a command with the splitted files.
 
 ###### Usage
 
-``` sh
+``` 
 usage: splitfile.py [-h] -f FILE [-s NUM] [-n NUM] -H {y|n} [-g NUM[,NUM]]
                     [-d DELIM] [-w {y|n}] [--exec "COMMAND"]
 
