@@ -1,6 +1,6 @@
 # tetl
 
-CLI wrapper for the [`etl.tiny_etl`](https://github.com/dumit98/projects/tree/master/tetl-cli) module. Extract data from a site(s) and load to a db or excel file with one command.
+CLI wrapper for the [`etl.tiny_etl`](https://github.com/dumit98/projects/tree/master/modules/my_modules/etl) module. Extract data from a site(s) and load to a db or excel file with one command.
 <br/><br/>
 
 ###### Usage

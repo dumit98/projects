@@ -12,7 +12,7 @@ class Command:
         print("Connecting... ")
 
         self.engine = create_engine(
-            'oracle+cx_oracle://cdmuser:C3tDa7aUs3R@tcinfodb.nov.com/cdm',
+            f'connection_string',
             connect_args={'encoding': 'utf8', 'nencoding': 'utf8'},
             max_identifier_length=128,
             echo=False)

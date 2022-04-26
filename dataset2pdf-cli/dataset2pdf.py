@@ -119,7 +119,7 @@ def get_access_token(user_name, user_password):
     '''
     Get access token and cache it to a given path from enviroment variable.
     '''
-    TC_AUTH_TOKEN_URL = 'https://cetauthservices-prd-azscus.nov.cloud:443/rest/api/1.0/novUser/login'
+    TC_AUTH_TOKEN_URL = 'https://{hostname_auth}/rest/api/1.0/novUser/login'
     cache_path = os.getenv('TC_AUTH_TOKEN_CACHE_PATH')
 
     if not cache_path:
@@ -181,7 +181,7 @@ def get_tokenized_dataset_puid(itemid, revid, item_data=[]):
     Issue a Get Request to get dataset information from the
     documents service
     '''
-    TC_SERVICES_DOC_INFO_URL = 'https://srvhouplmlts01.nov.com:12388/rest/api/3.0/documents/' \
+    TC_SERVICES_DOC_INFO_URL = f'https://{hostname_docs}/rest/api/3.0/documents/' \
         f'{itemid}?rev={revid}&flags=document.revision,document.revision.datasets'
     headers = {'authorization': 'Bearer %s' % token, 'accept': 'application/json'}
     msg_nofile = 'No dataset file found'
@@ -265,7 +265,7 @@ def dataset_convert_to_pdf(items=[]):
     Issue a Post Request to the PDF dataset service to make
     convertion on the dataset submitted
     ''' 
-    TC_PDF_SERVICES_URL = 'https://pdfdatasets-dev-azscus.nov.cloud:443/api/pdfdatasets'
+    TC_PDF_SERVICES_URL = f'https://{hostname_pdf}/api/pdfdatasets'
     headers = {'authorization': 'Bearer %s' % token, 'accept': '*/*',
                'CET-Referrer-ApplicationId': 'CDM-TEST'}
     response_payload = message = status_code = reason = None

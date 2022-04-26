@@ -577,7 +577,7 @@ def notify(status, email, message):
     elif status == 1:
         msg['Subject'] = 'Bulkload Failed'
 
-    s = smtplib.SMTP('smtp.nov.com')
+    s = smtplib.SMTP(f'smtp_server')
     s.send_message(msg)
     s.quit()
 
